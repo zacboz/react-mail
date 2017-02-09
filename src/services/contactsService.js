@@ -2,6 +2,14 @@ export function getContacts() {
 	return contacts.slice();
 }
 
+export function findContactById(id) {
+	for (let i = 0; i < contacts.length; i++) {
+		if (contacts[i]._id === id) {
+			return contacts[i]
+		}
+	}
+}
+
 const contacts = [
 	{
 		"_id": "57890ab45e95b346291c3728",

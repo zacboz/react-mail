@@ -8,9 +8,9 @@ export function findMessageById( id ) {
 			return messages[ i ]
 		}
 	}
-
 	return {};
 }
+
 
 const messages = [
 	{
